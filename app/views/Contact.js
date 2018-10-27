@@ -24,9 +24,10 @@ export class Contact extends React.Component{
     this.props.navigation.goBack();
   }
   render(){
+    const { navigate } = this.props.navigation;
     return (
       <View style={styles.container}>
-        <Header message='Tab to Login' />
+        <Header navigate={navigate} message='Login' />
         <Text style={styles.heading}>Contact Us</Text>
         <TextInput
           style={styles.inputs}
@@ -75,7 +76,7 @@ const styles = StyleSheet.create({
     flex: 1
   },
   multiInput: {
-    width: '90%',
+    width: '80%',
     paddingTop: 20,
     flex: 2
   },
