@@ -6,6 +6,9 @@ import { Video } from "./app/views/Video";
 import { VideoDetail } from "./app/views/VideoDetail";
 import { Register } from "./app/views/Register";
 import { Login } from "./app/views/Login";
+import { Quiz } from "./app/views/Quiz";
+import { QuizFinish } from "./app/views/QuizFinish";
+
 
 const PostMeRoutes = StackNavigator({
   HomeRT: {
@@ -25,6 +28,12 @@ const PostMeRoutes = StackNavigator({
   },
   LoginRT: {
     screen: Login
+  },
+  QuizRT: {
+    screen: Quiz
+  },
+  QuizFinishRT: {
+    screen: QuizFinish
   }
 }, {
   initialRouteName: 'HomeRT'
