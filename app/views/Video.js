@@ -38,6 +38,7 @@ componentDidMount(){
           <View style={{paddingTop: 30}}>
             <FlatList
               data={this.state.videoList}
+              keyExtractor={(item, index) => item.id.videoId.toString()}
               renderItem={({item}) =>
                 <TubeItem
                   navigate={navigate}

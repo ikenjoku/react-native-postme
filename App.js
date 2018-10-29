@@ -8,11 +8,15 @@ import { Register } from "./app/views/Register";
 import { Login } from "./app/views/Login";
 import { Quiz } from "./app/views/Quiz";
 import { QuizFinish } from "./app/views/QuizFinish";
+import { About } from "./app/views/About";
 
 
 const PostMeRoutes = StackNavigator({
   HomeRT: {
     screen: Home
+  },
+  AboutRT: {
+    screen: About
   },
   ContactRT: {
     screen : Contact
